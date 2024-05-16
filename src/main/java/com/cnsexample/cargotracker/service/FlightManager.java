@@ -2,6 +2,7 @@ package com.cnsexample.cargotracker.service;
 
 
 import com.cnsexample.cargotracker.bean.Flight;
+import com.cnsexample.cargotracker.bean.FlightStatus;
 import java.util.List;
 
 public interface FlightManager {
@@ -20,4 +21,12 @@ public interface FlightManager {
      * @return List of {@link Flight}
      */
     List<Flight> getProfiles ();
+
+    /**
+     * Update the status of Flight with uniquely identify by flightId
+     *
+     * @param flightId - unique identifier of flight
+     * @param flightStatus - {@link FlightStatus}
+     */
+    void updateStatus (Long flightId, FlightStatus flightStatus);
 }
