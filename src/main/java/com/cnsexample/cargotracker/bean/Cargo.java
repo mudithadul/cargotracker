@@ -8,7 +8,7 @@ import lombok.Data;
 @Data
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class CargoProfile {
+public class Cargo {
     private String cargoNumber;
     private BigDecimal weight;
     private CargoStatus status;

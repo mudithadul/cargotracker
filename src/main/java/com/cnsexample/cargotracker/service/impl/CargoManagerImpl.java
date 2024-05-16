@@ -1,6 +1,6 @@
 package com.cnsexample.cargotracker.service.impl;
 
-import com.cnsexample.cargotracker.bean.CargoProfile;
+import com.cnsexample.cargotracker.bean.Cargo;
 import com.cnsexample.cargotracker.service.CargoManager;
 import java.util.List;
 import org.springframework.stereotype.Service;
@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 public class CargoManagerImpl implements CargoManager {
 
     @Override
-    public CargoProfile createCargo (CargoProfile cargoProfile) {
+    public Cargo createCargo (Cargo cargo) {
         return null;
     }
 
     @Override
-    public List<CargoProfile> getCargoes () {
+    public List<Cargo> getCargoes () {
         return null;
     }
 }

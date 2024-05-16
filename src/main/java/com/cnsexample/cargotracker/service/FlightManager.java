@@ -1,7 +1,7 @@
 package com.cnsexample.cargotracker.service;
 
 
-import com.cnsexample.cargotracker.bean.FlightProfile;
+import com.cnsexample.cargotracker.bean.Flight;
 import java.util.List;
 
 public interface FlightManager {
@@ -9,15 +9,15 @@ public interface FlightManager {
     /**
      * Create a Flight Profile with given flight details
      *
-     * @param flightProfile {@link FlightProfile}
+     * @param flight {@link Flight}
      * @return
      */
-    FlightProfile createProfile (FlightProfile flightProfile);
+    Flight createProfile (Flight flight);
 
     /**
      * Get the currently available list of Flight profiles
      *
-     * @return List of {@link FlightProfile}
+     * @return List of {@link Flight}
      */
-    List<FlightProfile> getProfiles ();
+    List<Flight> getProfiles ();
 }

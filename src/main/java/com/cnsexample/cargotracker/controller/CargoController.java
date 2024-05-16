@@ -1,6 +1,6 @@
 package com.cnsexample.cargotracker.controller;
 
-import com.cnsexample.cargotracker.bean.CargoProfile;
+import com.cnsexample.cargotracker.bean.Cargo;
 import com.cnsexample.cargotracker.service.CargoManager;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,12 +20,12 @@ public class CargoController {
     }
 
     @PostMapping
-    public CargoProfile createCargo (@RequestBody CargoProfile cargoProfile) {
-        return cargoManager.createCargo(cargoProfile);
+    public Cargo createCargo (@RequestBody Cargo cargo) {
+        return cargoManager.createCargo (cargo);
     }
 
     @GetMapping
-    public List<CargoProfile> getCargoes () {
+    public List<Cargo> getCargoes () {
         return cargoManager.getCargoes();
     }
 

@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 @JsonInclude(value = JsonInclude.Include.NON_NULL)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class FlightProfile {
+public class Flight {
     private String flightNumber;
     private LocalDate localDate;
     private LocalTime localTime;

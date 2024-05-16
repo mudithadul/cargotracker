@@ -1,6 +1,6 @@
 package com.cnsexample.cargotracker.service;
 
-import com.cnsexample.cargotracker.bean.CargoProfile;
+import com.cnsexample.cargotracker.bean.Cargo;
 import java.util.List;
 
 public interface CargoManager {
@@ -8,15 +8,15 @@ public interface CargoManager {
     /**
      * Create CargoProfile with given properties
      *
-     * @param cargoProfile {@link CargoProfile}
-     * @return {@link CargoProfile}
+     * @param cargo {@link Cargo}
+     * @return {@link Cargo}
      */
-    CargoProfile createCargo (CargoProfile cargoProfile);
+    Cargo createCargo (Cargo cargo);
 
     /**
      * Get CargoProfiles
      *
-     * @return {@link List<CargoProfile>}
+     * @return {@link List< Cargo >}
      */
-    List<CargoProfile> getCargoes ();
+    List<Cargo> getCargoes ();
 }
